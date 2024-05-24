@@ -1,4 +1,3 @@
-import { NgFor, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 
 import { DUMMY_USERS } from './dummy-users';
@@ -11,7 +10,7 @@ import { UserComponent } from './user/user.component';
   standalone: true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [HeaderComponent, UserComponent, TasksComponent, NgFor, NgIf],
+  imports: [HeaderComponent, UserComponent, TasksComponent],
 })
 export class AppComponent {
   users = DUMMY_USERS;
